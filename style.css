@@ -1,0 +1,233 @@
+:root{
+    --yellow: #fbeab1;
+    --green: #05824c;
+    --pink: #ee0f64;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: jetbrains mono;
+}
+html{
+    background-color: var(--yellow);
+}
+section{
+    height: 100vh;
+}
+/*navbar*/
+nav{
+    position: fixed;
+    top: 0;
+    background-color: var(--green);
+    display: flex;
+    width: 100%;    
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-around;
+    font-family: JetBrains Mono;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--yellow);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+nav ul li a:hover{
+    color: var(--pink)  ;
+}
+/*home section*/
+.home-container{
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 450px;
+}
+.name{
+    display: block;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+    z-index: -1;
+}
+h1{
+    font-family: Jetbrains mono;
+    font-size: 35px;
+    color: var(--yellow);
+    line-height: 50px;
+}
+.sub-title{
+    font-size: 30px;
+    color: var(--green);
+    font-weight: 600;
+    margin-top: 20px;
+}
+.surname{
+    font-size: 60px;
+    color: var(--pink);
+    letter-spacing: 15px;
+}
+.board{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.blackboard{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 450px;
+    border: 3px solid var(--pink);
+    border-radius: 50px;
+    z-index: -2;
+}
+.student{
+    position: absolute;
+    right: 100px;
+    top: -50px;
+    filter: drop-shadow(16px -10px 20px var(--green));
+    z-index: -1;
+}
+/*about section*/
+.about-container{
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    width: 80%;
+}
+.image{
+    float: left;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+.student2{
+    border: 5px solid var(--pink);
+    border-radius: 50px;
+    background-color: var(--green);
+}
+.about-details{
+    margin: 5% 0 0;
+}
+.about-header{
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: var(--pink);
+}
+.about-detail{
+    font-size: 22px;
+    text-align: left;
+    line-height: 30px;   
+}
+.shania{
+    position: absolute;
+    margin-top: 50px;
+    right: 15%;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--green);
+}
+/*skill section*/
+.skills-container{
+    position: relative;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 450px;
+    z-index: -1;
+}
+.image-center{
+    display: flex;
+    justify-content: center;
+}
+.student3{
+    border: 5px solid var(--pink);
+    border-radius: 50px;
+    background-color: var(--green);
+}
+.csshead{
+    font-size: 40px;
+    color: var(--pink);
+}
+.skillcss{
+    margin-top: 30px;
+    position: absolute;
+}
+.css{
+    width: 30%;
+    font-size: 18px;
+    text-align: left;
+}
+.skill-leading{
+    position: absolute;
+    top: 0;
+    margin-top: 230px;
+    right: 20px;
+    width: 30%;
+}
+.leadership-header{
+    font-size: 40px;
+    color: var(--pink);
+}
+.leadership-skill{
+    font-size: 18px;
+    text-align: left;
+}
+/*contact section*/
+.contact-container{
+    padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    width: 70%;
+}
+.socials{
+    display:flex;
+    justify-content: center;
+}
+.contact-head{
+    text-align: center;
+}
+.icons{
+    margin: 40px 40px 20px;
+    height: 50px;
+}
+.contactform{
+    display: flex;
+    border: 5px solid var(--green);
+    border-radius: 50px;
+    height: 400px;
+    margin: auto;
+    width: 40%;
+}
+.forms{
+    margin: auto;
+}
+input[type="text"]{
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
